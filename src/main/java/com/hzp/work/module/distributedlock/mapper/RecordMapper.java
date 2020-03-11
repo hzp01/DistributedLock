@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface RecordMapper {
     @Insert({ "insert into record(uid, pid) values(#{uid}, #{pid})" })
-    @Options(useGeneratedKeys = true, keyProperty = "id")
+//    @Options(useGeneratedKeys = true, keyProperty = "id")
     int insert(Record record);
 }

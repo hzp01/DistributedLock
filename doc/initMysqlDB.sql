@@ -41,7 +41,7 @@ CREATE TABLE `record` (
   `pid` int(11) DEFAULT NULL COMMENT '优惠券id',
   `uid` varchar(50) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '用户id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=202 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='订单表';
+) ENGINE=InnoDB AUTO_INCREMENT=538 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='订单表';
 
 /*Data for the table `record` */
 

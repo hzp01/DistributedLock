@@ -40,11 +40,11 @@
 ```$xslt
 锁失效：设置锁失效时间太短，线程执行业务逻辑时，锁已经失效，多个线程可以同时执行业务逻辑出现超卖
 ```
-6.获取分布式锁redission、上锁lock（默认时间30s）、finally删除锁unlock
+6.获取分布式锁redisson、上锁lock（默认时间30s）、try catch中执行业务逻辑、finally删除锁unlock
 ```
 redis主从切换：redis主节点set锁、同步从节点，同步前主节点挂掉了，出现超卖
 ```
-> 理论，redission原理和简单介绍源码
+> 理论，redisson原理和简单介绍源码
 ```
 原理：获取锁的线程会自动续约失效时间、没有获取锁的线程会不断自动重试
 源码：lua脚本，获取锁的线程会存hash，key值为"uuid:线程id"，value为线程重入锁次数，根据hash的key值定时续约失效时间

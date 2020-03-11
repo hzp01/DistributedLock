@@ -1,4 +1,4 @@
-package com.hzp.work.module.distributedlock;
+package com.hzp.work.module;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
