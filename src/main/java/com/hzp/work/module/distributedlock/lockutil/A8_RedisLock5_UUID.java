@@ -35,7 +35,7 @@ public class A8_RedisLock5_UUID {
         } catch (Exception e) {
             throw new RuntimeException("执行业务逻辑异常！");
         } finally {
-            if (stringRedisTemplate.opsForValue().get(LOCK_KEY).equals(uuid)) {
+            if (uuid.equals(stringRedisTemplate.opsForValue().get(LOCK_KEY))) {
                 stringRedisTemplate.delete("lock");
             }
         }
