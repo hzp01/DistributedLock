@@ -1,4 +1,4 @@
-package com.hzp.work.module.distributedlock.LockMethodUtil;
+package com.hzp.work.module.distributedlock.lockutil;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RedissonClientInit {
+public class U1_RedissonClientInit {
     @Bean
     RedissonClient init() {
         Config config = new Config();

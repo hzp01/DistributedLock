@@ -1,4 +1,4 @@
-package com.hzp.work.module.distributedlock.LockMethodUtil;
+package com.hzp.work.module.distributedlock.lockutil;
 
 import com.hzp.work.module.distributedlock.entity.Product;
 import com.hzp.work.module.distributedlock.entity.Record;
@@ -9,12 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.beans.Transient;
 import java.util.UUID;
 
 @Component
 @Slf4j
-public class _3MysqlOptimisticLock {
+public class A3_MysqlOptimisticLock {
     @Autowired
     private ProductMapper productMapper;
     @Autowired

@@ -1,6 +1,6 @@
 package com.hzp.work.module.distributedlock.service.impl;
 
-import com.hzp.work.module.distributedlock.LockMethodUtil.*;
+import com.hzp.work.module.distributedlock.lockutil.*;
 import com.hzp.work.module.distributedlock.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,21 +11,21 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 public class OrderServiceImpl implements OrderService {
     @Autowired
-    private _1NormalBusiness normalBusiness;
+    private A1_NormalBusiness normalBusiness;
     @Autowired
-    private _2SynchronizedLock synchronizedLock;
+    private A2_SynchronizedLock synchronizedLock;
     @Autowired
-    private _3MysqlOptimisticLock mysqlOptimisticLock;
+    private A3_MysqlOptimisticLock mysqlOptimisticLock;
     @Autowired
-    private _4RedisLock1NoFinally redisLockNoFinally;
+    private A4_RedisLock1_NoFinally redisLockNoFinally;
     @Autowired
-    private _5RedisLock2OnlyFinally redisLockOnlyFinally;
+    private A5_RedisLock2_OnlyFinally redisLockOnlyFinally;
     @Autowired
-    private _6RedisLock3AddExpire redisLockAddExpire;
+    private A6_RedisLock3_AddExpire redisLockAddExpire;
     @Autowired
-    private _7RedisLock4AtomExpire redisLockAtomExpire;
+    private A7_RedisLock4_AtomExpire redisLockAtomExpire;
     @Autowired
-    private _8RedisLock5UUID redisLockUUID;
+    private A8_RedisLock5_UUID redisLockUUID;
 
     @Override
     @Transactional

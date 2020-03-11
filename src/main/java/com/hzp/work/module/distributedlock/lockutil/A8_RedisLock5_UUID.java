@@ -1,4 +1,4 @@
-package com.hzp.work.module.distributedlock.LockMethodUtil;
+package com.hzp.work.module.distributedlock.lockutil;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Component
-public class _8RedisLock5UUID {
+public class A8_RedisLock5_UUID {
     @Autowired
-    private _1NormalBusiness normalBusiness;
+    private A1_NormalBusiness normalBusiness;
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;

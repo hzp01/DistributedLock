@@ -1,4 +1,4 @@
-package com.hzp.work.module.distributedlock.LockMethodUtil;
+package com.hzp.work.module.distributedlock.lockutil;
 
 import com.hzp.work.module.distributedlock.entity.Product;
 import com.hzp.work.module.distributedlock.entity.Record;
@@ -13,7 +13,7 @@ import java.util.UUID;
 
 @Slf4j
 @Component
-public class _1NormalBusiness {
+public class A1_NormalBusiness {
     @Autowired
     private ProductMapper productMapper;
     @Autowired

@@ -1,21 +1,19 @@
-package com.hzp.work.module.distributedlock.LockMethodUtil;
+package com.hzp.work.module.distributedlock.lockutil;
 
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Component
-public class _9RedisLock6Redisson {
+public class A9_RedisLock6_Redisson {
     @Autowired
-    private _1NormalBusiness normalBusiness;
+    private A1_NormalBusiness normalBusiness;
 
     @Autowired
     private RedissonClient redissonClient;

@@ -1,4 +1,4 @@
-package com.hzp.work.module.distributedlock.LockMethodUtil;
+package com.hzp.work.module.distributedlock.lockutil;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +8,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
 @Component
-public class _5RedisLock2OnlyFinally {
+public class A5_RedisLock2_OnlyFinally {
     @Autowired
-    private _1NormalBusiness normalBusiness;
+    private A1_NormalBusiness normalBusiness;
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
