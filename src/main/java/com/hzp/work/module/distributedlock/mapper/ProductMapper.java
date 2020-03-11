@@ -9,10 +9,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ProductMapper {
     @Select("select * from product where id = #{id}")
-    Product selectById(@Param("id")Integer id);
+    Product selectById(@Param("id") Integer id);
 
     @Update("update product set num = num - 1 where id = #{id}")
-    int update(@Param("id")Integer id);
+    int update(@Param("id") Integer id);
 
     /*** mysql悲观锁 ***/
     @Select("select * from product where id = #{id} for update")
