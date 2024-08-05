@@ -54,7 +54,7 @@
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
-            <version>3.12.3</version>
+            <version>3.22.0</version>
         </dependency>
     </dependencies>
 
